@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>CenterClock</title>
+    <style>
+      body {
+        background: #000;
+        cursor: default;
+        margin: 0;
+        overflow: hidden;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      #centerClock {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 100%;
+      }
+
+      #centerClock > canvas {
+        width: 94vmin;
+        border-radius: 50%;
+        margin: 3vmin;
+      }
+
+      #title {
+        position: fixed;
+        bottom: 2em;
+        left: 2em;
+        color: #99A;
+        font-family: sans-serif;
+        font-size: 18px;
+      }
+
+      h1 {
+        margin: .33em 0;
+        font-size: 100%;
+      }
+
+      p {
+        margin: .33em 0;
+      }
+
+      a {
+        color: #AAB;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="CenterClock"></div>
+    <div id="title">
+      <h1>CenterClock</h1>
+      <p><em>Lee Byron &ndash; 2007</em><p>
+      <p><a href="https://www.github.com/leebyron/centerclock">Source</a><p>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.20/p5.js"></script>
+    <script src="bundle.js"></script>
+  </body>
+</html>
